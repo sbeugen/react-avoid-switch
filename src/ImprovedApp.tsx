@@ -18,7 +18,7 @@ const ImprovedApp: FC = () => {
   const [activeStep, setActiveStep] = useState(Steps.FIRST);
   const [firstName, setFirstName] = useState('');
   const [lastName, setLastName] = useState('');
-  const [age, setAge] = useState<number>(0);
+  const [age, setAge] = useState(0);
 
   const renderNextButton = (text: string, disabled: boolean, onClick: () => void) => (
     <Button className="button__next" onClick={onClick} disabled={disabled}>

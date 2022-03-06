@@ -12,7 +12,7 @@ const App: FC = () => {
   const [activeStep, setActiveStep] = useState(Steps.FIRST);
   const [firstName, setFirstName] = useState('');
   const [lastName, setLastName] = useState('');
-  const [age, setAge] = useState<number>(0);
+  const [age, setAge] = useState(0);
 
   const renderActiveStep = () => {
     switch (activeStep) {
